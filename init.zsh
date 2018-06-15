@@ -4,12 +4,12 @@ p6df::modules::p6macosx::external::brew() { }
 
 p6df::modules::p6macosx::init() {
 
-    . $P6_DFZ_DATA_PARENT/p6m7g8/p6common/lib/io.sh
-    . $P6_DFZ_DATA_PARENT/p6m7g8/p6common/lib/file.sh
-    . $P6_DFZ_DATA_PARENT/p6m7g8/p6common/lib/color.sh
-    . $P6_DFZ_DATA_PARENT/p6m7g8/p6common/lib/remote.sh
+    . $P6_DFZ_DATA_DIR/p6m7g8/p6common/lib/io.sh
+    . $P6_DFZ_DATA_DIR/p6m7g8/p6common/lib/file.sh
+    . $P6_DFZ_DATA_DIR/p6m7g8/p6common/lib/color.sh
+    . $P6_DFZ_DATA_DIR/p6m7g8/p6common/lib/remote.sh
 
-    local dir=$P6_DFZ_DATA_PARENT/p6m7g8/p6macosx
+    local dir=$P6_DFZ_DATA_DIR/p6m7g8/p6macosx
 
     local file
     for file in $dir/lib/*.sh; do
