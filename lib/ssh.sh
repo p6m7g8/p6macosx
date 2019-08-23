@@ -3,6 +3,8 @@ p6_macosx_ssh_do() {
     local type="${2:-ssh}"
     local aws_profile="${3:-$AWS_DEFAULT_PROFILE}"
 
+    [ -n "$aws_profile" ] && eval "$aws_profile"
+
     local host_fg=$(p6_macosx_osa_fg_for_host "$host")
     local host_bg=$(p6_macosx_osa_bg_for_host "$host")
     local fg=$(p6_color_name_to_rgb "$host_fg")
