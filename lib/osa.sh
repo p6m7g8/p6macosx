@@ -13,13 +13,13 @@ p6_macosx_osa_iterm_color() {
     local bg="$3"
     local alpha="$4"
 
-    local fg_r=$(p6_color_hex_to_rgb "$fg" 'r')
-    local fg_g=$(p6_color_hex_to_rgb "$fg" 'g')
-    local fg_b=$(p6_color_hex_to_rgb "$fg" 'b')
+    local fg_r=$(p6_color_hex_to_d16b "$fg" 'r')
+    local fg_g=$(p6_color_hex_to_d16b "$fg" 'g')
+    local fg_b=$(p6_color_hex_to_d16b "$fg" 'b')
 
-    local bg_r=$(p6_color_hex_to_rgb "$bg" 'r')
-    local bg_g=$(p6_color_hex_to_rgb "$bg" 'g')
-    local bg_b=$(p6_color_hex_to_rgb "$bg" 'b')
+    local bg_r=$(p6_color_hex_to_d16b "$bg" 'r')
+    local bg_g=$(p6_color_hex_to_d16b "$bg" 'g')
+    local bg_b=$(p6_color_hex_to_d16b "$bg" 'b')
 
     /usr/bin/osascript <<EOF
 tell application "iTerm"
