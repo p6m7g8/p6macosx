@@ -1,3 +1,13 @@
+######################################################################
+#<
+#
+# Function:
+#      = p6_macosx_osa_iterm_color_default()
+#
+#
+#
+#>
+######################################################################
 p6_macosx_osa_iterm_color_default() {
 
     local black=$(p6_color_name_to_rgb "black")
@@ -7,6 +17,21 @@ p6_macosx_osa_iterm_color_default() {
     p6_macosx_osa_iterm_color "localhost" "$white" "$black" "$opacity"
 }
 
+######################################################################
+#<
+#
+# Function:
+#      = p6_macosx_osa_iterm_color(host, fg, bg, alpha)
+#
+# Arg(s):
+#    host - 
+#    fg - 
+#    bg - 
+#    alpha - 
+#
+#
+#>
+######################################################################
 p6_macosx_osa_iterm_color() {
     local host="$1"
     local fg="$2"
@@ -33,12 +58,36 @@ end tell
 EOF
 }
 
+######################################################################
+#<
+#
+# Function:
+#      = p6_macosx_osa_bg_for_host(host)
+#
+# Arg(s):
+#    host - 
+#
+#
+#>
+######################################################################
 p6_macosx_osa_bg_for_host() {
     local host="$1"
 
     p6_file_display $P6_DFZ_CONFIG_DIR/.hosts | awk -v k=$host 'tolower($1) ~ tolower(k) { print $2 }'
 }
 
+######################################################################
+#<
+#
+# Function:
+#      = p6_macosx_osa_fg_for_host(host)
+#
+# Arg(s):
+#    host - 
+#
+#
+#>
+######################################################################
 p6_macosx_osa_fg_for_host() {
     local host="$1"
 
