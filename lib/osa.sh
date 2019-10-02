@@ -2,9 +2,7 @@
 #<
 #
 # Function:
-#      = p6_macosx_osa_iterm_color_default()
-#
-#
+#	p6_macosx_osa_iterm_color_default()
 #
 #>
 ######################################################################
@@ -21,14 +19,13 @@ p6_macosx_osa_iterm_color_default() {
 #<
 #
 # Function:
-#      = p6_macosx_osa_iterm_color(host, fg, bg, alpha)
+#	p6_macosx_osa_iterm_color(host, fg, bg, alpha)
 #
-# Arg(s):
-#    host - 
-#    fg - 
-#    bg - 
-#    alpha - 
-#
+#  Args:
+#	host - 
+#	fg - 
+#	bg - 
+#	alpha - 
 #
 #>
 ######################################################################
@@ -62,11 +59,10 @@ EOF
 #<
 #
 # Function:
-#      = p6_macosx_osa_bg_for_host(host)
+#	p6_macosx_osa_bg_for_host(host)
 #
-# Arg(s):
-#    host - 
-#
+#  Args:
+#	host - 
 #
 #>
 ######################################################################
@@ -80,11 +76,10 @@ p6_macosx_osa_bg_for_host() {
 #<
 #
 # Function:
-#      = p6_macosx_osa_fg_for_host(host)
+#	p6_macosx_osa_fg_for_host(host)
 #
-# Arg(s):
-#    host - 
-#
+#  Args:
+#	host - 
 #
 #>
 ######################################################################
