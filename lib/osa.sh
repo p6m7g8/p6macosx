@@ -1,8 +1,7 @@
 ######################################################################
 #<
 #
-# Function:
-#	p6_macosx_osa_iterm_color_default()
+# Function: p6_macosx_osa_iterm_color_default()
 #
 #>
 ######################################################################
@@ -18,8 +17,7 @@ p6_macosx_osa_iterm_color_default() {
 ######################################################################
 #<
 #
-# Function:
-#	p6_macosx_osa_iterm_color(host, fg, bg, alpha)
+# Function: p6_macosx_osa_iterm_color(host, fg, bg, alpha)
 #
 #  Args:
 #	host - 
@@ -58,8 +56,7 @@ EOF
 ######################################################################
 #<
 #
-# Function:
-#	p6_macosx_osa_bg_for_host(host)
+# Function: p6_macosx_osa_bg_for_host(host)
 #
 #  Args:
 #	host - 
@@ -75,8 +72,7 @@ p6_macosx_osa_bg_for_host() {
 ######################################################################
 #<
 #
-# Function:
-#	p6_macosx_osa_fg_for_host(host)
+# Function: p6_macosx_osa_fg_for_host(host)
 #
 #  Args:
 #	host - 
