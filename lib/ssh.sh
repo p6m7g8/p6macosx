@@ -4,9 +4,9 @@
 # Function: p6_macosx_ssh_do(host, [type=ssh], [aws_profile=$AWS_DEFAULT_PROFILE])
 #
 #  Args:
-#	host - 
-#	OPTIONAL type -  [ssh]
-#	OPTIONAL aws_profile -  [$AWS_DEFAULT_PROFILE]
+#	host -
+#	OPTIONAL type - [ssh]
+#	OPTIONAL aws_profile - [$AWS_DEFAULT_PROFILE]
 #
 #>
 ######################################################################
