@@ -1,19 +1,19 @@
 ######################################################################
 #<
 #
-# Function: p6_macosx_ssh_do(host, [type=ssh], [aws_profile=$AWS_DEFAULT_PROFILE])
+# Function: p6_macosx_ssh_do(host, [type=ssh], [aws_profile=])
 #
 #  Args:
 #	host -
 #	OPTIONAL type - [ssh]
-#	OPTIONAL aws_profile - [$AWS_DEFAULT_PROFILE]
+#	OPTIONAL aws_profile - []
 #
 #>
 ######################################################################
 p6_macosx_ssh_do() {
     local host="$1"
     local type="${2:-ssh}"
-    local aws_profile="${3:-$AWS_DEFAULT_PROFILE}"
+    local aws_profile="${3:-}"
 
     [ -n "$aws_profile" ] && eval "$aws_profile"
 
@@ -26,11 +26,12 @@ p6_macosx_ssh_do() {
 
     p6_macosx_osa_iterm_color "$host" "$fg" "$bg" "$opacity"
 
-    if [ x"$type" = x"ssh" ]; then
-	p6_remote_ssh_do "$host"
-    else
-	p6_aws_ssh_svc_do "$host" "$type"
-    fi
+    case $type in
+    ssh) p6_remote_ssh_do "$host" ;;
+    public) p6_aws_ssh_connect_public "$host" ;;
+    jump) p6_aws_ssh_connect_jump "$host" ;;
+    private) p6_aws_ssh_connect_private "$host" ;;
+    esac
 
     p6_macosx_osa_iterm_color_default
 }
