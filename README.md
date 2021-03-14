@@ -60,7 +60,7 @@
 
 #### ../p6macosx/lib/ssh.sh:
 
-- p6_macosx_ssh_do(host, [type=ssh], [aws_profile=])
+- p6_macosx_ssh_do(host, [type=ssh], [pfunc=])
 
 
 
