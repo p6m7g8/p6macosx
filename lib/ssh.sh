@@ -13,7 +13,7 @@
 p6_macosx_ssh_do() {
     local host="$1"
     local type="${2:-ssh}"
-    local pfunc="$3{:-}"
+    local pfunc="${3:-}"
 
     if ! p6_string_blank "$pfunc"; then
         p6_run_yield "$pfunc"
