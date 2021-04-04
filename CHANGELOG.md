@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/p6m7g8/p6macosx/compare/v2.1.0...v2.1.1) (2021-04-04)
+
+
+### Bug Fixes
+
+* **ssh:** fixes typo in arg assignment ([#17](https://github.com/p6m7g8/p6macosx/issues/17)) ([482fe91](https://github.com/p6m7g8/p6macosx/commit/482fe91edea8b99ab6dacb51813a1f5d0e7af2ec))
+
+
+* Coc -> .github ([a7d020f](https://github.com/p6m7g8/p6macosx/commit/a7d020f5feef4a63386c5e319c0635b5f1a9ac2e))
+* p6ify ([#15](https://github.com/p6m7g8/p6macosx/issues/15)) ([cf425c4](https://github.com/p6m7g8/p6macosx/commit/cf425c4d58b3a884076290ef6a6128b8a96bb1bc))
+* the great vscode indent of 2021 ([#16](https://github.com/p6m7g8/p6macosx/issues/16)) ([58428a1](https://github.com/p6m7g8/p6macosx/commit/58428a17d6b2f79aab178ce8d8897b8894bad42e))
+* **ssh:** drops do() wrappers ([#14](https://github.com/p6m7g8/p6macosx/issues/14)) ([0fb862b](https://github.com/p6m7g8/p6macosx/commit/0fb862b6f9b138aa0d30a54becff70eb39a916ac))
+
 ## [2.1.0](https://github.com/p6m7g8/p6macosx/compare/v2.0.0...v2.1.0) (2020-12-06)
 
 
